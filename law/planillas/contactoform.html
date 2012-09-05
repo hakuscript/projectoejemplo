@@ -1,0 +1,8 @@
+{% extends 'index.html' %}
+{% block contenido %}
+    <form id='formulario' method='POST' action=''>{% csrf_token %}
+    {{formulario.as_p}}
+    <p><input type='submit' value='Confirmar' 
+        onClick="alert('Mensaje Enviado, Sera redireccionado al Home en unos segundos.');"/></p>
+    </form>
+{% endblock %} 
